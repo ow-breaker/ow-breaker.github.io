@@ -1,0 +1,12 @@
+{
+    "name": "Owie-latest",
+    "version": "0.0.1",
+    "builds": [
+      {
+        "chipFamily": "ESP8266",
+        "parts": [
+          { "path": "https://api.github.com/repos/ow-breaker/Owie/releases/latest/firmware.bin", "offset": 0 }
+        ]
+      }
+    ]
+  }
