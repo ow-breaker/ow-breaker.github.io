@@ -6,7 +6,7 @@
     <script type="module" src="https://unpkg.com/esp-web-tools@7.1.0/dist/web/install-button.js?module"></script>
 
     <script type="module">
-        import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
+        import { request } from "https://cdn.skypack.dev/@octokit/request";
         </script>
 </head>
 
@@ -23,9 +23,9 @@
         Stable (main branch):
         <esp-web-install-button manifest="firmware/manifest-stable.json"></esp-web-install-button>
     </div>
-    <div id="install-button-ap-password">
-        Latest-2:
-        <esp-web-install-button manifest="firmware/manifest-3.json"></esp-web-install-button>
+    <div id="install-button-latest">
+        Latest (whatever branch was updated most recently):
+        <esp-web-install-button manifest="firmware/manifest-latest.json"></esp-web-install-button>
     </div>
 </body>
 
