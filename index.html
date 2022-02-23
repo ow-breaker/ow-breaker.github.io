@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <script
-  type="module"
-  src="https://unpkg.com/esp-web-tools@7.1.0/dist/web/install-button.js?module"
-></script>
-    </head>
 
-    <body>
-        <p>
-        Click the connect button to begin installing Owie.
-        </p>
-        <p>
-            If you don't see your ESP device in the list of devices to choose, you might need to install 
-            <a href="https://esphome.github.io/esp-web-tools/#drivers">the drivers.</a>
-        </p>
+<head>
+    <script type="module" src="https://unpkg.com/esp-web-tools@7.1.0/dist/web/install-button.js?module"></script>
+</head>
 
-        <esp-web-install-button
-  manifest="firmware/manifest.json"
-></esp-web-install-button>
-    </body>
+<body>
+    <p>
+        Click the corresponding connect button to begin installing your choosen version of Owie.
+    </p>
+    <p>
+        If you don't see your ESP device in the list of devices to choose, you might need to install
+        <a href="https://esphome.github.io/esp-web-tools/#drivers">the drivers.</a>
+    </p>
+
+    <div id="install-button-stable">
+        Stable (main branch):
+        <esp-web-install-button manifest="firmware/manifest-stable.json"></esp-web-install-button>
+    </div>
+    <div id="install-button-ap-password">
+        AP Password:
+        <esp-web-install-button manifest="firmware/manifest-ap-password.json"></esp-web-install-button>
+    </div>
+</body>
+
 </html>
