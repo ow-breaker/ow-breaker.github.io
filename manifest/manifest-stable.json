@@ -1,11 +1,11 @@
 {
     "name": "Owie",
-    "version": "Latest Official Release",
+    "version": "0.0.1",
     "builds": [
       {
         "chipFamily": "ESP8266",
         "parts": [
-          { "path": "https://github.com/lolwheel/Owie/releases/latest/download/firmware.bin", "offset": 0 }
+          { "path": "../firmware/stable/firmware.bin", "offset": 0 }
         ]
       }
     ]
