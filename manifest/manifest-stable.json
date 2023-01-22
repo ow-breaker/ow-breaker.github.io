@@ -1,6 +1,6 @@
 {
     "name": "Owie",
-    "version": "0.0.1",
+    "version": "1.4.3",
     "builds": [
       {
         "chipFamily": "ESP8266",
